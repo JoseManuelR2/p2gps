@@ -17,8 +17,8 @@ jobs:
         uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
-        java-version: '21'
-        cache: maven
+          java-version: '21'
+          cache: maven
 
       - name: Compilar y ejecutar los tests
         run: mvn -B clean verify
